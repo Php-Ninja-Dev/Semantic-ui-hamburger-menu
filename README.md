@@ -1,6 +1,8 @@
 # Semantic UI: Hamburger Menu
 Author: @betoayesa 
+
 Advertising: This repo is sponsored by www.phpninja.info Web Repair Services.
+
 Disclaimer: I understand why Semantic UI creators doesn't want to add this type of features to the project's core. I respect the nature of Semantic UI project because I love it. But I need a Hamburger Menu. Maybe you too.
 
 [Click here for live demo ](http://htmlpreview.github.io/?https://github.com/natzar/semantic-ui-hamburger/blob/master/index.html)
