@@ -1,0 +1,138 @@
+
+/*
+
+Semantic UI Hamburger Menu (not oficial)
+I understand why Semantic UI creators doesn't want to add more responsive debt to core project. I respect the nature of Semantic UI project because I love what these guys created there. But I need a Hamburger Menu. Maybe you too.
+By @betoayesa.
+
+**This file include some responsive helper clases from  https://github.com/Semantic-Org/Semantic-UI/issues/1114
+*/
+
+/* Hamburger Clases Implemented for Mobile Only. Up to you to add it for other breakpoints */
+
+/* Hamburger hidden by default */
+
+.hamburger{
+	display:none
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large screen only"]:not(.mobile),
+  [class*="widescreen only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+
+	.hamburger {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		right: 9px;
+		top: 13px;
+		cursor: pointer;
+		display: block;
+	}
+	.hamburger 	span {
+		display: block;
+		height: 3px;
+		background: #000;
+		margin: 0 0 3px;
+	}
+	.hamburger:hover {
+		.opacity(1);
+		.transition-duration(.2s);
+	}
+	.hamburger.active {
+				
+	}
+	.hamburger.active .hamburger-bun {
+		margin: 0;
+		-webkit-transform-origin: center center;
+		-moz-transform-origin: center center;
+		-o-transform-origin: center center;
+		transform-origin: center center;
+	}
+			
+	.hamburger.active .hamburger-bun:first-child {
+		.rotation(45deg);
+		.transition(.2s);
+		margin-top: 3px;
+	}
+	.hamburger.active .hamburger-bun:last-child {
+		.rotation(-45deg);
+		.transition(.2s);
+		margin-top: -3px;
+	}
+
+	.hamburger.active .hamburger-bun .hamburger-patty {
+		display: none;
+	}
+
+	.ui.stackable.menu .item:not(.header){
+		display:none;
+	}
+
+	.ui.stackable.menu.open .item{
+		display:block;
+	}
+
+	.ui.stackable.menu.open {
+		height:inherit
+	}
+}
+		
+	
+
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  [class*="mobile only"]:not(.tablet),
+  [class*="tablet hidden"],
+  [class*="computer only"]:not(.tablet),
+  [class*="large screen only"]:not(.tablet),
+  [class*="widescreen only"]:not(.tablet),
+  [class*="or lower hidden"]:not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  [class*="mobile only"]:not(.computer),
+  [class*="tablet only"]:not(.computer),
+  [class*="computer hidden"],
+  [class*="large screen only"]:not(.computer),
+  [class*="widescreen only"]:not(.computer),
+  [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  [class*="mobile only"]:not([class*="large screen"]),
+  [class*="tablet only"]:not([class*="large screen"]),
+  [class*="computer only"]:not([class*="large screen"]),
+  [class*="large screen hidden"],
+  [class*="widescreen only"]:not([class*="large screen"]),
+  [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: 1920px) {
+  [class*="mobile only"]:not([class*="widescreen"]),
+  [class*="tablet only"]:not([class*="widescreen"]),
+  [class*="computer only"]:not([class*="widescreen"]),
+  [class*="large screen only"]:not([class*="widescreen"]),
+  [class*="widescreen hidden"],
+  [class*="widescreen or lower hidden"] {
+    display: none !important;
+  }
+}
