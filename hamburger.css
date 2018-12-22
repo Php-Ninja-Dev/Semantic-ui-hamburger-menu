@@ -136,3 +136,19 @@ By @betoayesa.
     display: none !important;
   }
 }
+
+/* Fix inverted menu dropdowns */
+.ui.menu.inverted .ui.dropdown .menu.inverted>.item{ 
+	background: #1b1c1d;
+	color:white;
+}
+.ui.menu.inverted .dropdown.item .menu {
+	background: #1b1c1d;
+	color:white;
+}
+.ui.menu.inverted .ui.dropdown .menu>.item:hover {
+    color: rgba(0,0,0,.05)!important;
+    cursor:pointer;
+    cursor:'hand';
+    background: rgba(0,0,0,.95)!important;
+}
