@@ -5,10 +5,11 @@ I understand why Semantic UI creators doesn't want to add this type of features 
 [Click here for live demo and resize the window](http://htmlpreview.github.io/?https://github.com/natzar/semantic-ui-hamburger/blob/master/index.html)
 
 An .ui.menu.stackable with hamburger icon.
+
 ![](screenshot.png?raw=true)
 
-
 After hamburger icon is clicked.
+
 ![](screenshot2.png?raw=true)
 
 ##How to enable it
